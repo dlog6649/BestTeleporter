@@ -20,9 +20,6 @@ A Lethal Company mod that enhances teleporter functionality.
 - Lethal Company v64
 - BepInEx 5.4.x
 
-## Known Issues
-No known issues at this time
-
 ## Support
 If you encounter any bugs or have suggestions, please create an issue on GitHub.
 
