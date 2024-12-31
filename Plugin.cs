@@ -13,13 +13,13 @@ namespace BestTeleporter
         private void Awake()
         {
             mls = BepInEx.Logging.Logger.CreateLogSource(PluginInfo.PLUGIN_GUID);
-            mls.LogInfo($"플러그인 {PluginInfo.PLUGIN_GUID} 이(가) 로드되었습니다!");
+            mls.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} has been loaded!");
 
-            // 모든 패치 적용
+            // Apply all patches
             harmony.PatchAll(typeof(Plugin));
             harmony.PatchAll(typeof(TeleporterPatch));
             
-            mls.LogInfo("텔레포터 아이템 드롭 방지 패치가 적용되었습니다.");
+            mls.LogInfo("Teleporter item drop prevention and cooldown removal patches have been applied.");
         }
     }
 } 

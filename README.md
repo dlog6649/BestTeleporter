@@ -17,7 +17,7 @@ A Lethal Company mod that enhances teleporter functionality.
 4. Launch the game
 
 ## Compatibility
-- Lethal Company v45
+- Lethal Company v64
 - BepInEx 5.4.x
 
 ## Known Issues
@@ -28,3 +28,4 @@ If you encounter any bugs or have suggestions, please create an issue on GitHub.
 
 ## Credits
 - Created by: dlog6649
+- GitHub Repository: [@dlog6649/BestTeleporter](https://github.com/dlog6649/BestTeleporter)

@@ -10,7 +10,7 @@ namespace BestTeleporter
         [HarmonyPrefix]
         static bool PreventItemDropTeleporter(PlayerControllerB playerScript)
         {
-            // 일반 텔레포터 아이템 드롭 방지
+            // Prevent item dropping for regular teleporter
             playerScript.isHoldingObject = false;
             return true;
         }
@@ -19,7 +19,7 @@ namespace BestTeleporter
         [HarmonyPostfix]
         static void RestoreItemHoldingTeleporter(PlayerControllerB playerScript)
         {
-            // 일반 텔레포터 아이템 상태 복구
+            // Restore item holding state for regular teleporter
             playerScript.isHoldingObject = true;
         }
 
@@ -27,7 +27,7 @@ namespace BestTeleporter
         [HarmonyPrefix]
         static bool PreventItemDropInverse(PlayerControllerB playerScript)
         {
-            // 역방향 텔레포터 아이템 드롭 방지
+            // Prevent item dropping for inverse teleporter
             playerScript.isHoldingObject = false;
             return true;
         }
@@ -36,11 +36,11 @@ namespace BestTeleporter
         [HarmonyPostfix]
         static void RestoreItemHoldingInverse(PlayerControllerB playerScript)
         {
-            // 역방향 텔레포터 아이템 상태 복구
+            // Restore item holding state for inverse teleporter
             playerScript.isHoldingObject = true;
         }
 
-        // 일반 텔레포터 쿨다운 제거
+        // Remove regular teleporter cooldown
         [HarmonyPatch(typeof(TeleporterScript), "Start")]
         [HarmonyPostfix]
         static void RemoveTeleporterCooldown(TeleporterScript __instance)
@@ -48,7 +48,7 @@ namespace BestTeleporter
             __instance.cooldownAmount = 0f;
         }
 
-        // 역방향 텔레포터 쿨다운 제거
+        // Remove inverse teleporter cooldown
         [HarmonyPatch(typeof(InverseTeleporterItem), "Start")]
         [HarmonyPostfix]
         static void RemoveInverseTeleporterCooldown(InverseTeleporterItem __instance)
