@@ -1,0 +1,52 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio files
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Rider files
+.idea/
+*.DotSettings.user
+
+# Build artifacts
+*.dll
+*.pdb
+*.exe
+*.cache
+
+# NuGet Packages
+*.nupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# BepInEx specific
+BepInEx/
+*.log
+
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# macOS specific
+.DS_Store
+._*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Project specific
+Assembly-CSharp.dll
+Assembly-CSharp-firstpass.dll
+UnityEngine.dll
+UnityEngine.*.dll 

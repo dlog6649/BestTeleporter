@@ -1,0 +1,31 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# C# files
+*.cs text diff=csharp
+
+# Unity asset files
+*.unity binary
+*.prefab binary
+*.asset binary
+
+# Documents
+*.md text diff=markdown
+*.txt text
+*.pdf binary
+
+# Visual Studio files
+*.sln text eol=crlf
+*.csproj text eol=crlf
+*.user text
+*.filters text
+
+# Source code
+*.json text
+*.xml text
+*.yaml text
+*.yml text
+
+# Collapse Unity-generated files on GitHub
+*.asset linguist-generated
+*.meta linguist-generated 
